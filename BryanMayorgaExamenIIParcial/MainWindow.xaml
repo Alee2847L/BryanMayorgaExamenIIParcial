@@ -8,10 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
@@ -23,16 +24,27 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Label Content="USUARIOS" Grid.Column="0" Grid.ColumnSpan="4" FontWeight="Bold" FontSize="24" />
-        <Label Content="Nombres" Grid.Column="0" Grid.Row="1" FontSize="20"/>
-        <Label Content="Apellidos" Grid.Column="0" Grid.Row="2" FontSize="20"/>
-        <Label Content="Nombre usuario" Grid.Column="0" Grid.Row="3" FontSize="20"/>
-        <Label Content="Contraseña" Grid.Column="0" Grid.Row="4" FontSize="20"/>
-        <Label Content="Correo Electronico" Grid.Column="0" Grid.Row="5" FontSize="20"/>
-        <Label Content="Fecha de creacion" Grid.Column="2" Grid.Row="1" FontSize="20"/>
-        <Label Content="Ultima conexion" Grid.Column="2" Grid.Row="2" FontSize="20"/>
-        <Label Content="Tipo Usuario" Grid.Column="2" Grid.Row="3" FontSize="20"/>
-        <Label Content="Estado" Grid.Column="2" Grid.Row="4" FontSize="20"/>
-        <TextBox Name="txtnombres" Grid.Column="1" Height="40" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox Name="txtapellidos" Grid.Column="1" Height="40" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label Content="Nombres" Grid.Column="1" Grid.Row="1" FontSize="15"/>
+        <Label Content="Apellidos" Grid.Column="1" Grid.Row="2" FontSize="15"/>
+        <Label Content="Nombre usuario" Grid.Column="1" Grid.Row="3" FontSize="15"/>
+        <Label Content="Contraseña" Grid.Column="1" Grid.Row="4" FontSize="15"/>
+        <Label Content="Correo Electronico" Grid.Column="1" Grid.Row="5" FontSize="15"/>
+        <Label Content="Fecha de creacion" Grid.Column="3" Grid.Row="1" FontSize="15"/>
+        <Label Content="Ultima conexion" Grid.Column="3" Grid.Row="2" FontSize="15"/>
+        <Label Content="Tipo Usuario" Grid.Column="3" Grid.Row="3" FontSize="15"/>
+        <Label Content="Estado" Grid.Column="3" Grid.Row="4" FontSize="15"/>
+        <TextBox Name="txtnombres" Grid.Column="2" Height="20" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" Width="120" />
+        <TextBox Name="txtapellidos" Grid.Column="2" Height="20" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="120"/>
+        <TextBox Name="txtnomusu" Grid.Column="2" Height="20" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="120"/>
+        <TextBox Name="txtcontra" Grid.Column="2" Height="20" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="120"/>
+        <TextBox Name="txtcorreo" Grid.Column="2" Height="20" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="120"/>
+        <TextBox Name="txtfecha" Grid.Column="4" Height="20" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" Width="120" />
+        <TextBox Name="txtultimaconexion" Grid.Column="4" Height="20" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="120"/>
+        <TextBox Name="txttipousu" Grid.Column="4" Height="20" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="120"/>
+        <TextBox Name="txtestado" Grid.Column="4" Height="20" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="120"/>
+        <Button Name="btnagrerar"  Content="Agregar" Grid.Column="1" Grid.Row="6" Margin="5" Click="Btnagrerar_Click"/>
+        <Button Name="btneliminar" Content="Eliminar" Grid.Column="2" Grid.Row="6" Margin="5" Click="Btneliminar_Click"/>
+        <Button Name="btnActualizar" Content="Actualizar" Grid.Column="3" Grid.Row="6" Margin="5" Click="BtnActualizar_Click"/>
+        <Button Name="btnbuscar" Content="Buscar" Grid.Column="4" Grid.Row="6" Margin="5" Click="Btnbuscar_Click"/>
     </Grid>
 </Window>
